@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Mangooo™</title>
     <link rel="icon" type="image/png" href="/images/favicon.png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link href="https://use.typekit.net/fln4jhp.css" rel="stylesheet">
     <!-- Firebase SDK -->
     <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
@@ -24,7 +27,10 @@
         </script>
 
     <style>
-    
+    html {
+          scroll-behavior: smooth;
+          scroll-padding-top: 10px;
+        }
   
     body {
         background-color: #0A0A0A;
@@ -34,24 +40,27 @@
       }
 
     .Body-grey {
-        font-family: "helvetica-neue-lt-pro", sans-serif;
-        font-weight: 200;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
         font-size: 16px;
         font-style: normal;
-        letter-spacing: 0px;
+        letter-spacing: -0.5px;
         color: #868686;
       }
 
       .Links {
-        font-family: "helvetica-neue-lt-pro", sans-serif;
-        font-weight: 200;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
         font-size: 16px;
         font-style: normal;
-        letter-spacing: 0px;
+        letter-spacing: -0.5px;
         color: #868686;
         cursor: pointer;
         text-decoration: none;
       }
+
 
       .Links:hover {
         color: #FFFFFF;
@@ -60,29 +69,32 @@
 
       
       .Heading, .Image-Video, .Status, .Likes, .counter {
-        font-family: "helvetica-neue-lt-pro", sans-serif;
-        font-weight: 200;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
         font-size: 12px;
         font-style: normal;
-        letter-spacing: 0px;
+        letter-spacing: -0.5px;
         color: #FFFFFF;
       }
 
       .slide-title {
-        font-family: "helvetica-neue-lt-pro", sans-serif;
-        font-weight: 200;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
         font-size: 18px;
         font-style: normal;
-        letter-spacing: 0px;
+        letter-spacing: -0.5px;
         color: #FFFFFF;
       }
 
       .Project-Title {
-        font-family: "helvetica-neue-lt-pro", sans-serif;
-        font-weight: 200;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
         font-size: 16px;
         font-style: normal;
-        letter-spacing: 0px;
+        letter-spacing: -0.5px;
         color: #FFFFFF;
       }
 
@@ -104,7 +116,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 50px;
+        padding: 50px 50px 50px 70px;
         box-sizing: border-box;
       }
   
@@ -224,11 +236,12 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        font-family: "helvetica-neue-lt-pro", sans-serif;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
         font-weight: 400;
         font-size: 32px;
         font-style: normal;
-        letter-spacing: 0px;
+        letter-spacing: -0.7px;
         width: 80%;
         padding-left: 10%;
         height: 100%;   
@@ -339,11 +352,12 @@
     }
 
     .blurb {
-          font-family: "helvetica-neue-lt-pro", sans-serif;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
           font-weight: 400;
           font-size: 14px;
           font-style: normal;
-          letter-spacing: 0px;
+          letter-spacing: -1px;
           padding-left: 10%;
           padding-right: 10%;
           width: 80%;  /* 90% + 5% + 5% = 100% */
@@ -354,11 +368,12 @@
 
         
       .slide-title {
-        font-family: "helvetica-neue-lt-pro", sans-serif;
-        font-weight: 200;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
         font-size: 12px;
         font-style: normal;
-        letter-spacing: 0px;
+        letter-spacing: -0.7px;
         color: #FFFFFF;
         display: block;
       }
@@ -370,11 +385,12 @@
     }
 
     .like-button {
-        font-family: "helvetica-neue-lt-pro", sans-serif;
-        font-weight: 200;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
         font-size: 2rem;
         font-style: normal;
-        letter-spacing: 0px;
+        letter-spacing: -1px;
         color: #FFFFFF;
         user-select: none; /* Prevent text selection */
         touch-action: manipulation; /* Improve touch response */
@@ -407,9 +423,10 @@
      
       <div class="Hero-body">
             <div class="Body-Section" style="gap: 3.5rem;"> 
-             <div class="Logo"><img src="images/mangooo-logo.png"></div>  
+             <div class="Logo"><img src="images/mangooo-logo.svg"></div>  
               
-            <div class="Body-grey" style="font-size: 1.3rem; font-weight: 600; color: #FFFFFF;">Mangooo is a London based design studio run by <a style="color: #727272;">Tatenda.</a> He has extensive across the creative field  shipping products for clients such HSBC, Deloitte, Deutsche Bank, Lloyds Bank and more. He help connect the dots from idea to launch. Collaborating closely with CPO’s, front-end developers, software engineers, and key stakeholders to deliver solutions that hit the mark. </div>
+            <div class="Body-grey" style="font-size: 1.4rem; font-weight: 600; color: #FFFFFF; font-style: normal;
+        letter-spacing: -0.7px;">Mangooo is a London-based design studio led by <a onclick="openInNewTab('https://www.linkedin.com/in/tatendataka/');" style="color: #727272; cursor: pointer;" >Tatenda.</a> He brings experience delivering digital products for global brands including HSBC, Deloitte, Deutsche Bank, Lloyds Bank and more. He helps connect the dots from idea to launch. Collaborating closely with CPO’s, front-end developers, software engineers, and key stakeholders to deliver solutions that hit the mark. </div>
             </div>
        
             
@@ -417,7 +434,7 @@
 
   <div style="gap: 2rem; display: flex; flex-direction: column;"> 
     <div class="Body-Section"> 
-            <div class="Body-grey" style="font-size: 0.75rem;">Mangooo is a trading name of Tatenda Takavarasha. Registered Address: 38 St James House, Maidenhead, United Kingdom. Read our <a style="color: #ffffff;"> Terms & Conditions.</a></div>
+            <div class="Body-grey" style="font-size: 0.75rem; letter-spacing: -0.5px;">Mangooo is a trading name of Tatenda Takavarasha. <br> Registered Address: 38 St James House, Maidenhead, United Kingdom. Read our <a style="color: #ffffff;"> Terms & Conditions.</a></div>
       </div>
       <div class="Hero-footer"> 
         <div class="Body-Section"> 
@@ -425,8 +442,9 @@
        
             <div class="Links-Section">  
               <a class="Links" href="mailto:takavarashatatenda@yahoo.co.uk">Email <img src="images/Up-arrow.svg"></a>
+              <a class="Links" href="#Pricing" style="transition: ease-in-out;">Pricing <img src="images/Up-arrow.svg"></a>
               <div class="Links" onclick="openInNewTab('https://www.linkedin.com/in/tatendataka/');">LinkedIn <img src="images/Up-arrow.svg"></div>
-              <div class="Links" onclick="openInNewTab('https://www.instagram.com/tatenda_taka/');">Instagram <img src="images/Up-arrow.svg"></div>
+              <div class="Links" onclick="openInNewTab('https://www.instagram.com/tatenda_taka/');">Book Call <img src="images/Up-arrow.svg"></div>
             </div>
 
         </div>
@@ -438,7 +456,24 @@
     
     <div class="Feed">
 
-      
+                      <!-- CTA Section Start -->
+                      <div class="Work">  
+                        <div id="Pricing" class="Image-Video"><div class="blurb" style="font-size: 3rem; align-items: center; text-align: center; font-weight: 600; color: #FFFFFF; font-style: normal; letter-spacing: -1px; line-height: 3rem;"> <div class="slide-title">WHO</div>Design Partner for Growing SaaS Teams, Tackling Ambiguous Briefs and delivering clarity and quality. <img src="images/review-imagery.png" style="padding: 20px;">
+                      </div> 
+                    </div>
+                        <div class="Work-footer"> 
+                          <div class="Description">
+                            <div class="Status">INSPIRATION</div>
+                            <div class="Project-Title">Favourite Quotes</div>
+                          </div>
+                          <div class="Likes" data-project-id="Project-7"> <div class="like-button" id="likeBtn">❤️</div> Likes: <span class="like-count">0</span> </div>
+                        </div>
+                        </div>
+                      <!-- CTA Section End -->
+
+
+
+
                   <!-- Work Start -->
                       <div class="Work">  
                         <div class="Image-Video"> <img src="https://tatendaselectedworks.s3.eu-north-1.amazonaws.com/Iterative-Approach-Final.png" type="image/png" alt="Image" style="width: 100%; height: 100%; object-fit: cover;"></div>
@@ -658,7 +693,7 @@
 
 
 
-                <!-- Work Start -->
+                <!-- Quote Start -->
                       <div class="Work">  
                         <div class="Image-Video"><div class="blurb"> <div class="slide-title">STEVE JOBS</div>Design is not just what it looks like and feels like.<br> Design is how it works.</div> </div>
                         <div class="Work-footer"> 
@@ -669,7 +704,7 @@
                           <div class="Likes" data-project-id="Project-7"> <div class="like-button" id="likeBtn">❤️</div> Likes: <span class="like-count">0</span> </div>
                         </div>
                         </div>
-                      <!-- Work End -->
+                      <!-- Quote End -->
                       
                       
 
