@@ -39,6 +39,36 @@
         padding: 0;
       }
 
+
+      .nav-heading {
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-size: 20px;
+        font-style: normal;
+        letter-spacing: -0.5px;
+        color: #FFFFFF;
+      }
+
+      .cta-heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        padding: 20px 100px 20px 100px;
+        height: 100%;
+        gap: 20px;    
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-size: 48px;
+        font-style: normal;
+        letter-spacing: -0.7px;
+        line-height: 54px;
+        color: #FFFFFF;
+      }
+
     .Body-grey {
         font-family: "Inter", sans-serif;
         font-optical-sizing: auto;
@@ -83,7 +113,7 @@
         font-optical-sizing: auto;
         font-weight: 400;
         font-size: 18px;
-        font-style: normal;
+        line-height: 18px;
         letter-spacing: -0.5px;
         color: #FFFFFF;
       }
@@ -236,16 +266,18 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        text-align: center;
+        align-items: center;
+        padding: 20px 100px 20px 100px;
+        height: 100%;
+        gap: 10px;   
+        color: #ffffff;
         font-family: "Inter", sans-serif;
         font-optical-sizing: auto;
-        font-weight: 400;
+        font-weight: 500;
         font-size: 32px;
         font-style: normal;
         letter-spacing: -0.7px;
-        width: 80%;
-        padding-left: 10%;
-        height: 100%;   
-        color: #ffffff;
       }
 
       .carousel-slide {
@@ -351,19 +383,51 @@
         height: 350px  ;
     }
 
-    .blurb {
+    .nav-heading {
         font-family: "Inter", sans-serif;
         font-optical-sizing: auto;
-          font-weight: 400;
-          font-size: 14px;
-          font-style: normal;
-          letter-spacing: -1px;
-          padding-left: 10%;
-          padding-right: 10%;
-          width: 80%;  /* 90% + 5% + 5% = 100% */
-          max-width: 100%;
-          box-sizing: border-box; 
-          color: #ffffff;
+        font-weight: 600;
+        font-size: 18px;
+        font-style: normal;
+        letter-spacing: -0.5px;
+        color: #FFFFFF;
+      }
+
+      .cta-heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        padding: 10px 40px 10px 40px;
+        height: 100%;
+        gap: 10px;    
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-size: 24px;
+        font-style: normal;
+        letter-spacing: -0.7px;
+        line-height: 28px;
+        color: #FFFFFF;
+      }
+
+    .blurb {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        padding: 10px 40px 10px 40px;
+        height: 100%;
+        gap: 10px;   
+        color: #ffffff;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-size: 18px;
+        font-style: normal;
+        letter-spacing: -0.7px;
         }
 
         
@@ -423,10 +487,9 @@
      
       <div class="Hero-body">
             <div class="Body-Section" style="gap: 3.5rem;"> 
-             <div class="Logo"><img src="images/mangooo-logo.svg"></div>  
+             <div class="Logo"><img src="images/mangooo-logo-s.svg"></div>  
               
-            <div class="Body-grey" style="font-size: 1.4rem; font-weight: 600; color: #FFFFFF; font-style: normal;
-        letter-spacing: -0.7px;">Mangooo is a London-based design studio led by <a onclick="openInNewTab('https://www.linkedin.com/in/tatendataka/');" style="color: #727272; cursor: pointer;" >Tatenda.</a> He brings experience delivering digital products for global brands including HSBC, Deloitte, Deutsche Bank, Lloyds Bank and more. He helps connect the dots from idea to launch. Collaborating closely with CPO’s, front-end developers, software engineers, and key stakeholders to deliver solutions that hit the mark. </div>
+            <div class="nav-heading">Mangooo is a London-based design studio led by <a onclick="openInNewTab('https://www.linkedin.com/in/tatendataka/');" style="color: #727272; cursor: pointer;">Tatenda.</a> He brings experience delivering digital products for global brands including HSBC, Deloitte, Deutsche Bank, Lloyds Bank and more. He helps connect the dots from idea to launch. Collaborating closely with CPO’s, front-end developers, software engineers, and key stakeholders to deliver solutions that hit the mark. </div>
             </div>
        
             
@@ -458,15 +521,15 @@
 
                       <!-- CTA Section Start -->
                       <div class="Work">  
-                        <div id="Pricing" class="Image-Video"><div class="blurb" style="font-size: 3rem; align-items: center; text-align: center; font-weight: 600; color: #FFFFFF; font-style: normal; letter-spacing: -1px; line-height: 3rem;"> <div class="slide-title">WHO</div>Design Partner for Growing SaaS Teams, Tackling Ambiguous Briefs and delivering clarity and quality. <img src="images/review-imagery.png" style="padding: 20px;">
+                        <div id="Pricing" class="Image-Video"><div class="cta-heading"> <div class="slide-title">WHO WE ARE</div>Design Partner for Growing SaaS Teams, Tackling Ambiguous Briefs and Delivering Clarity and Quality. <img src="images/review-imagery.png">
                       </div> 
                     </div>
                         <div class="Work-footer"> 
                           <div class="Description">
-                            <div class="Status">INSPIRATION</div>
-                            <div class="Project-Title">Favourite Quotes</div>
+                            <div class="Status">-------</div>
+                            <div class="Project-Title">Introduction</div>
                           </div>
-                          <div class="Likes" data-project-id="Project-7"> <div class="like-button" id="likeBtn">❤️</div> Likes: <span class="like-count">0</span> </div>
+                          <div class="Likes" data-project-id="Project-20"> <div class="like-button" id="likeBtn">❤️</div> Likes: <span class="like-count">0</span> </div>
                         </div>
                         </div>
                       <!-- CTA Section End -->
